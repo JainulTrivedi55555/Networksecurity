@@ -7,6 +7,8 @@ pymongo[srv]==3.12
 pymongo
 scikit-learn
 dill
-pyaml 
+mlflow
+pyaml
+dagshub
 
 ## -e .
