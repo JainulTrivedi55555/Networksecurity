@@ -1,0 +1,37 @@
+[2025-08-10 01:26:49,489 ] 1025 httpx - INFO - HTTP Request: GET https://dagshub.com/api/v1/user "HTTP/1.1 200 OK"
+[2025-08-10 01:26:49,496 ] 107 dagshub - INFO - Accessing as JainulTrivedi55555
+[2025-08-10 01:26:50,165 ] 1025 httpx - INFO - HTTP Request: GET https://dagshub.com/api/v1/repos/JainulTrivedi55555/Networksecurity "HTTP/1.1 200 OK"
+[2025-08-10 01:26:50,781 ] 1025 httpx - INFO - HTTP Request: GET https://dagshub.com/api/v1/user "HTTP/1.1 200 OK"
+[2025-08-10 01:26:50,784 ] 107 dagshub - INFO - Initialized MLflow to track repo "JainulTrivedi55555/Networksecurity"
+[2025-08-10 01:26:50,785 ] 107 dagshub - INFO - Repository JainulTrivedi55555/Networksecurity initialized!
+[2025-08-10 01:30:22,632 ] 42 root - INFO - Start data Ingestion
+[2025-08-10 01:30:27,114 ] 65 root - INFO - Performed train test split on the dataframe
+[2025-08-10 01:30:27,114 ] 67 root - INFO - Exited split_data_as_train_test method of Data_Ingestion class
+[2025-08-10 01:30:27,116 ] 75 root - INFO - Exporting train and test file path.
+[2025-08-10 01:30:27,269 ] 84 root - INFO - Exported train and test file path.
+[2025-08-10 01:30:27,270 ] 45 root - INFO - Data Ingestion completed and artifact: DataIngestionArtifact(trained_file_path='Artifacts\\08_10_2025_01_26_43\\data_ingestion\\ingested\\train.csv', test_file_path='Artifacts\\08_10_2025_01_26_43\\data_ingestion\\ingested\\test.csv')
+[2025-08-10 01:30:27,288 ] 55 root - INFO - Initiate the data Validation
+[2025-08-10 01:30:27,450 ] 32 root - INFO - Required number of columns:2
+[2025-08-10 01:30:27,450 ] 33 root - INFO - Data frame has columns:31
+[2025-08-10 01:30:27,450 ] 32 root - INFO - Required number of columns:2
+[2025-08-10 01:30:27,450 ] 33 root - INFO - Data frame has columns:31
+[2025-08-10 01:30:27,934 ] 101 root - INFO - Entered initiate_data_transformation method of DataTransformation class
+[2025-08-10 01:30:27,934 ] 103 root - INFO - Starting data transformation
+[2025-08-10 01:30:28,005 ] 47 root - INFO - Entered get_data_transformer_object method of Transformation Class
+[2025-08-10 01:30:28,006 ] 51 root - INFO - Initialize KNNImputer with {'missing_values': nan, 'n_neighbors': 3, 'weights': 'uniform'}
+[2025-08-10 01:30:28,045 ] 47 root - INFO - Entered the save_object method of MainUtils class
+[2025-08-10 01:30:28,055 ] 51 root - INFO - Exited the save_object method of MainUtils class
+[2025-08-10 01:30:28,055 ] 47 root - INFO - Entered the save_object method of MainUtils class
+[2025-08-10 01:30:28,064 ] 51 root - INFO - Exited the save_object method of MainUtils class
+[2025-08-10 01:35:01,819 ] 242 root - INFO - Starting MLflow tracking run...
+[2025-08-10 01:35:10,449 ] 260 root - INFO - Attempting to log model as a file artifact to handle DagsHub API incompatibility.
+[2025-08-10 01:35:17,112 ] 272 root - INFO - Successfully logged the model as a file artifact.
+[2025-08-10 01:35:17,438 ] 275 root - INFO - MLflow tracking run completed.
+[2025-08-10 01:35:17,467 ] 47 root - INFO - Entered the save_object method of MainUtils class
+[2025-08-10 01:35:17,508 ] 51 root - INFO - Exited the save_object method of MainUtils class
+[2025-08-10 01:35:17,509 ] 47 root - INFO - Entered the save_object method of MainUtils class
+[2025-08-10 01:35:17,536 ] 51 root - INFO - Exited the save_object method of MainUtils class
+[2025-08-10 01:35:17,536 ] 346 root - INFO - Model trainer artifact: ModelTrainerArtifact(trained_model_file_path='Artifacts\\08_10_2025_01_26_43\\model_trainer\\trained_model\\model.pkl', train_metric_artifact=ClassificationMetricArtifact(f1_score=0.9915521628498728, precision_score=0.9910478128179043, recall_score=0.9920570264765785), test_metric_artifact=ClassificationMetricArtifact(f1_score=0.9699879951980792, precision_score=0.9680511182108626, recall_score=0.9719326383319968))
+[2025-08-10 01:35:17,542 ] 36 root - INFO - Syncing local folder 'Artifacts\08_10_2025_01_26_43' to S3 bucket 'networksecurity' with prefix 'artifact/08_10_2025_01_26_43'.
+[2025-08-10 01:35:17,546 ] 44 root - INFO - Uploading Artifacts\08_10_2025_01_26_43\data_ingestion\feature_store\phisingData.csv to s3://networksecurity/artifact/08_10_2025_01_26_43/data_ingestion/feature_store/phisingData.csv
+[2025-08-10 01:35:17,559 ] 50 root - ERROR - Failed to sync folder 'Artifacts\08_10_2025_01_26_43' to S3: Unable to locate credentials

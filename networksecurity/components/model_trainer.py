@@ -308,7 +308,7 @@ class ModelTrainer:
             }
         }
         model_report: dict = evaluate_models(X_train=X_train, y_train=y_train, X_test=x_test, y_test=y_test,
-                                            models=models, param=params)
+                                             models=models, param=params)
 
         ## To get best model score from dict
         best_model_score = max(sorted(model_report.values()))
@@ -334,10 +334,12 @@ class ModelTrainer:
         os.makedirs(model_dir_path, exist_ok=True)
 
         Network_Model = NetworkModel(preprocessor=preprocessor, model=best_model)
+        # Saving the final model object (which includes the preprocessor) to the correct path
         save_object(self.model_trainer_config.trained_model_file_path, obj=Network_Model)
+        logging.info(f"Trained model saved to: {self.model_trainer_config.trained_model_file_path}")
 
-        #model pusher
-        save_object("final_model/model.pkl", best_model)
+        # NOTE: The hardcoded path below has been removed to avoid a file path mismatch.
+        # save_object("final_model/model.pkl", best_model)
 
         ## Model Trainer Artifact
         model_trainer_artifact = ModelTrainerArtifact(trained_model_file_path=self.model_trainer_config.trained_model_file_path,

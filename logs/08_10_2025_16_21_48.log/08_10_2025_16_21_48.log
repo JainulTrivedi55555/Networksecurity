@@ -1,0 +1,14 @@
+[2025-08-10 16:21:52,206 ] 1025 httpx - INFO - HTTP Request: GET https://dagshub.com/api/v1/user "HTTP/1.1 200 OK"
+[2025-08-10 16:21:52,211 ] 107 dagshub - INFO - Accessing as JainulTrivedi55555
+[2025-08-10 16:21:52,700 ] 1025 httpx - INFO - HTTP Request: GET https://dagshub.com/api/v1/repos/JainulTrivedi55555/Networksecurity "HTTP/1.1 200 OK"
+[2025-08-10 16:21:53,157 ] 1025 httpx - INFO - HTTP Request: GET https://dagshub.com/api/v1/user "HTTP/1.1 200 OK"
+[2025-08-10 16:21:53,160 ] 107 dagshub - INFO - Initialized MLflow to track repo "JainulTrivedi55555/Networksecurity"
+[2025-08-10 16:21:53,161 ] 107 dagshub - INFO - Repository JainulTrivedi55555/Networksecurity initialized!
+[2025-08-10 16:22:16,351 ] 50 root - INFO - Received file for prediction: test.csv
+[2025-08-10 16:22:16,352 ] 62 root - INFO - File saved successfully at temp_test.csv
+[2025-08-10 16:22:18,597 ] 50 root - INFO - Received file for prediction: test.csv
+[2025-08-10 16:22:18,601 ] 62 root - INFO - File saved successfully at temp_test.csv
+[2025-08-10 16:22:19,401 ] 50 root - INFO - Received file for prediction: test.csv
+[2025-08-10 16:22:19,402 ] 62 root - INFO - File saved successfully at temp_test.csv
+[2025-08-10 16:22:20,040 ] 50 root - INFO - Received file for prediction: test.csv
+[2025-08-10 16:22:20,042 ] 62 root - INFO - File saved successfully at temp_test.csv
